@@ -1,0 +1,94 @@
+@import "../../Sidebar/side-bar-width.scss";
+@import "../../BlueButton.scss";
+
+.content-table {
+    font-size: 2em;
+    table-layout: fixed;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        padding: 0.5em 2em;
+    }
+
+    thead th {
+        background-color: darkgray;
+        font-size: 1.4em;
+    }
+
+    // td,
+    // tbody {
+    //     text-align: center;
+    // }
+
+    .centered {
+        text-align: center;
+    }
+
+    .string-cell {
+        padding: 0;
+    }
+
+    td,
+    th,
+    tbody {
+        border: 2px solid white;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #333;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #3a3a3a;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        text-align: center;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        height: 100%;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .add-button-div {
+        text-align: center;
+    }
+
+    .blue-button {
+        margin-top: 2em;
+        width: 30%;
+    }
+
+    .alert-box {
+        width: 100vw;
+        height: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+}

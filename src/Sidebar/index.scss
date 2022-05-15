@@ -1,0 +1,8 @@
+@import "../Sidebar/side-bar-width.scss";
+
+.side-bar {
+  height: 100%;
+  background-color: #222;
+  width: $sidebar-width;
+  position: absolute;
+}

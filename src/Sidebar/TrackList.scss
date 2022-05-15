@@ -1,0 +1,34 @@
+.track-list-container {
+  overflow: auto;
+  height: 80%;
+
+  .track-list {
+    list-style: none;
+    font-size: 1.8em;
+    padding-left: 0.2em;
+
+    li {
+      a {
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+        display: inline-block;
+      }
+
+      padding-bottom: 0.6em;
+      cursor: pointer;
+
+      text-align: center;
+
+      &:hover {
+        color: blue;
+        transition: 0.3s;
+      }
+
+      &:active {
+        color: darkblue;
+        transition: 0.2s;
+      }
+    }
+  }
+}

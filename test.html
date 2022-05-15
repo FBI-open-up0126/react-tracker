@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <button id="add-data-button">Add data!</button>
+    <button id="print-data">Print data button!</button>
+    <script defer src="./index.js"></script> -->
+        <!--what a fancy symbol for comments-->
+
+        <input id="date" type="date" />
+        <button id="print-date">Print date!</button>
+        <script defer>
+            const input = document.querySelector("#date");
+            const button = document.querySelector("#print-date");
+
+            button.onclick = () => {
+                const date = new Date(
+                    input.valueAsDate.getUTCFullYear(),
+                    input.valueAsDate.getUTCMonth(),
+                    input.valueAsDate.getUTCDate()
+                );
+                console.log(`date is ${date}`);
+            };
+        </script>
+    </body>
+</html>

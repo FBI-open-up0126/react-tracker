@@ -1,0 +1,43 @@
+#shadow-box {
+  background-color: rgb(255, 255, 255);
+  /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid;
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.rainbow-text-animated {
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff9900,
+    #ffff00,
+    #00ff00,
+    #00ff99,
+    #00ffff,
+    #0000ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow-animation 8s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow-animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}

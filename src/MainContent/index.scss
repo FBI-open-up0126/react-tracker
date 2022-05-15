@@ -1,0 +1,8 @@
+@import "../Sidebar/side-bar-width.scss";
+
+.main-content {
+  width: calc(100% - $sidebar-width);
+  position: absolute;
+  height: 100%;
+  margin-left: $sidebar-width;
+}
